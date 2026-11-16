@@ -1,0 +1,13 @@
+[Unit]
+Description=LibreQoS Local Shim for Splynx
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Environment=SHIM_API_KEY=your_secure_api_key_here
+ExecStart=/usr/bin/node /opt/libreqos-shim/server.mjs
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+{
+  "name": "splynx-libreqos-shim",
+  "version": "1.0.0",
+  "description": "Local API shim to bridge Splynx and LibreQoS without Insight",
+  "main": "server.mjs",
+  "type": "module",
+  "dependencies": {
+    "ws": "^8.18.0",
+    "cbor-x": "^1.5.9"
+  }
+}
